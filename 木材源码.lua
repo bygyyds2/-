@@ -8,7 +8,8 @@ Notification:Notify(
 -- 增强的白名单系统
 local WhitelistEnabled = true -- 是否启用白名单系统
 local Whitelist = {
-    "samcZSZ"
+    "gouchaoxi2",
+     "samcZSZ"
 }
 
 -- 检查当前用户是否在白名单中
