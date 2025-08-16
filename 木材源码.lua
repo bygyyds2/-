@@ -7,9 +7,10 @@ Notification:Notify(
 )
 -- 增强的白名单系统
 local WhitelistEnabled = true -- 是否启用白名单系统
-local Whitelist = {
-    "gouchaoxi2",
-     "samcZSZ"
+local Whitelist = {            
+    "gouchaoxi2",     --添加白名单的账号
+    "Chinese1522",
+    "samcZSZ"
 }
 
 -- 检查当前用户是否在白名单中
@@ -30,8 +31,8 @@ end
 -- 如果用户不在白名单中，显示通知并停止脚本
 if not IsUserWhitelisted() then
     Notification:Notify( 
-        {Title = "您未购买白名单，白名单需要10块钱", Description = "请添加作者qq购买，qq号：3967418825，来时请备注来意"}, 
-        {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 60, Type = "image"}, 
+        {Title = "权限错误", Description = "您未被授权使用此脚本"}, 
+        {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 10, Type = "image"}, 
         {Image = "http://www.roblox.com/asset/?id=4483345998", ImageColor = Color3.fromRGB(255, 84, 84)} 
     )
     return -- 停止脚本执行
